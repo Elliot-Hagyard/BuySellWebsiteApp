@@ -1,0 +1,20 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    flex-direction: column;
+}
+
+#add\/user {
+    height: 30%;
+}
+
+#add\/item\/ {
+    height: 60%;
+}

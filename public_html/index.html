@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ostaa</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div id="add/user" class="form">
+        <h1>Add User</h1>
+        <div class="content">
+            <label for="username">Username</label>
+            <input type="text" id="usernameUser" class="username">
+        </div>
+        <div class="content">
+            <label for="password">Password</label>
+            <input type="password" id="passwordUser" class="password">
+        </div>
+        <button id="submitUser" onclick="sendData('add/user', '')">Create User</button>
+    </div>
+    <div id="add/item/" class="form">
+        <h1>Add Item</h1>
+
+        <div class="content">
+            <label for="username">Title</label>
+            <input type="text" id="titleItem" class="title">
+        </div>
+        <div class="content">
+            <label>Price</label>
+            <input type="number" id="priceItem" class="price">
+        </div>
+        <div class="content">
+            <label for="image">Image</label>
+            <input type="text" id="imageItem" class="image">
+        </div>
+        <div class="content">
+            <label for="status">Status</label>
+            <input type="text" class="stat"></input>
+        </div>
+        <div class="content">
+            <label for="description">Desc</label>
+            <input type="text" class="description">
+        </div>
+        <div class="content">
+            <label for="username">Username</label>
+            <input type="text" id="usernameItem" class="username">
+        </div>
+        <button onclick="sendData('add/item/', document.getElementById('usernameItem').value)">Create Item</button>
+</body>
+<script src="index.js"></script>
+
+</html>
